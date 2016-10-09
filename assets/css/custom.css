@@ -4,10 +4,16 @@
 }
 
 h2 {
-    font-size: 1.3em;
+    font-size: 1.4em;
     letter-spacing: 0.15em;
     /*text-transform: none;*/
-    margin: 0 0 1em 0;
+    margin: 2em 0 1em 0;
+	text-align: center;
+
+}
+
+h1 {
+	color: #ab0b0b;
 }
 
 .intro-question {
