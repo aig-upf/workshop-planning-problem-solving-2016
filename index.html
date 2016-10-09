@@ -10,6 +10,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="assets/css/custom.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -68,8 +72,7 @@
 
 
 
-
-<section>
+<section id="schedule">
 <h2>Schedule</h2>
 
 <div class="schedule-cat"><span class="time">10h30</span>Opening</div>
@@ -79,21 +82,37 @@
     <ul class="schedule-list">
     <li class="schedule-item"><span class="author">J. Levy</span>
         <span class="affiliation">(IIIA-CSIC)</span>,
-        <span class="talk">Real-World SAT Instances</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Real-World SAT Instances</a>.
+        <div class="talk-abstract">
+            No abstract provided.
+        </div>
+    </li>
+
 
     <li class="schedule-item"><span class="author">F. Manyà & J. R. Soler</span>
         <span class="affiliation">(IIIA-CSIC)</span>,
-        <span class="talk">Clause Tableaux for SAT, MaxSAT and MinSAT</span></li>
-
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Clause Tableaux for SAT, MaxSAT and MinSAT</a>.
+        <div class="talk-abstract">
+            We will present how clause tableaux for solving SAT can be extended to solve both MaxSAT and MinSAT. Moreover, we will prove that the presented calculi are sound and complete, and discuss how these results can be incorporated into existing MaxSAT/MinSAT solvers.
+        </div>
+    </li>
 
     <li class="schedule-item"><span class="author">D. Larraz</span>
         <span class="affiliation">(UPC)</span>,
-        <span class="talk">Compositional Program Analysis using Max-SMT</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Compositional Program Analysis using Max-SMT </a>.
+        <div class="talk-abstract">
+            Applications of Max-SMT solvers to program verification are presented. In particular, an automated compositional program verification technique for safety properties based on conditional inductive invariants is introduced. For a given program part (e.g., a single loop) and postcondition, we show how to, using a Max-SMT solver, an inductive invariant together with a precondition can be synthesized so that the precondition ensures the validity of the invariant and that the invariant implies the postcondition. From this, we build a bottom-up program verification framework that propagates preconditions of small program parts as postconditions for preceding program parts.
+        </div>
+    </li>
 
 
     <li class="schedule-item"><span class="author">J. Coll Caballero </span>
         <span class="affiliation">(UdG)</span>,
-        <span class="talk">Solving the Multi-Mode Resource-Constrained Project Scheduling Problem with SMT</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Solving the Multi-Mode Resource-Constrained Project Scheduling Problem with SMT </a>.
+        <div class="talk-abstract">
+            The Multi-Mode Resource-Constrained Project Scheduling Problem (MRCPSP) is a generalization of the well known Resource-Constrained Project Scheduling Problem (RCPSP). The most common exact approaches for solving this problem are based on branch-and-bound algorithms, mixedinteger linear programming and Boolean satisfiability (SAT). We present a new exact approach for solving this problem, using Satisfiability Modulo Theories (SMT). We provide two encodings into SMT and several reformulation and preprocessing techniques. The optimization algorithm that we propose, uses an SMT solver as an oracle and depending on its answer is able to update the encoding for the next optimization step. We report extensive performance experiments showing the utility of the proposed techniques and the good performance of our approach that allows us to close several open instances.
+        </div>
+    </li>
 
 </ul>
 
@@ -107,15 +126,32 @@
 
     <li class="schedule-item"><span class="author">J. Larrosa </span>
         <span class="affiliation">(UPC)</span>,
-        <span class="talk">Limited Discrepancy AND/OR search</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Limited Discrepancy AND/OR search </a>.
+        <div class="talk-abstract">
+            No abstract provided.
+        </div>
+    </li>
 
     <li class="schedule-item"><span class="author">P. Meseguer </span>
         <span class="affiliation">(IIIA-CSIC)</span>,
-        <span class="talk">Distributed constraint satisfaction with several variables per agent</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Distributed constraint satisfaction with several variables per agent </a>.
+        <div class="talk-abstract">
+            La mayoría de algoritmos para DisCSP suponen agentes con una sola variable. Sin embargo, es natural que cada agente maneje varias variables.
+Teóricamente, este problema se resuelve mediante decomposition o compilation, que reformulan el problema para obtener agentes con una sola variable,
+aunque en la práctica estos métodos presentan inconvenientes y no se suelen utilizar (ineficiencia, memoria exponencial desde el principio de la ejecución).
+Proponemos mantener el problema local de cada agente con las variables originales, de forma que el problema local sea resuelto internamente, y se coordine
+la resolución del problema global mediante un algoritmo de DisCSP (ABT). Para mantener completitud, se puede necesitar memoria exponencial (caso peor).
+Proponemos aplicar estas ideas al caso de planificación multiagente bajo la aproximación SATPLAN. Resultados preliminares avalan la factibilidad de esta propuesta.
+        </div>
+    </li>
 
     <li class="schedule-item"><span class="author">H.Geffner </span>
         <span class="affiliation">(UPF)</span>,
-        <span class="talk">Width-based Search Algorithms</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Width-based Search Algorithms </a>.
+        <div class="talk-abstract">
+            No abstract provided.
+        </div>
+    </li>
 
     </ul>
 
@@ -127,23 +163,46 @@
 
     <li class="schedule-item"><span class="author">S. Jiménez </span>
         <span class="affiliation">(UPF)</span>,
-        <span class="talk">Computing generalized plans with classical planning</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Computing generalized plans with classical planning </a>.
+        <div class="talk-abstract">
+            Generalized planning is the task of generating a single solution valid for multiple planning instances. In this talk we introduce a novel formalism for representing generalized plans that borrows two useful mechanisms from structured programming: control flow and procedure calls. On the one hand control flow structures allow to compactly represent solutions that generalize over different instances. On the other hand procedure calls allow to represent hierarchical and recursive solutions as well as to reuse existing generalized plans. The talk also shows how to compute solutions of this kind with off-the-shelf planners using a generalized planning into classical planning compilation. Interestingly the compilation can incorporate prior knowledge in the form of auxiliary procedures which expands the applicability of our approach to more challenging tasks. Experiments show that a classical planner using our compilation can compute generalized plans to a wide range of generalized planning tasks including sorting lists of variable-size or DFS traversing variable-size binary trees.
+        </div>
+    </li>
 
     <li class="schedule-item"><span class="author">J. Espasa Arxer </span>
         <span class="affiliation">(UdG)</span>,
-        <span class="talk">A Semantic Notion of Interference for Planning Modulo Theories</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">A Semantic Notion of Interference for Planning Modulo Theories </a>.
+        <div class="talk-abstract">
+            The aim of being able to reason about quantities, time, space and much more has been the main objective of the many efforts on the integration of propositional planning with extensions to handle different theories. Planning Modulo Theories (PMT) is an approximation inspired by Satisfiability Modulo Theories (SMT) that generalizes the integration of arbitrary theories with propositional planning. Parallel plans are crucial to reduce plan lengths and hence the time needed to reach a feasible plan in many approaches. Parallelization of actions relies on the notion of (non-)interference, which is usually determined syntactically at compile time. In this paper we present a general semantic notion of interference between actions in PMT. Along its generality, this notion can be efficiently checked at compile time by means of satisfiability checks.
+        </div>
+    </li>
 
     <li class="schedule-item"><span class="author">J. Segovia </span>
         <span class="affiliation">(UPF)</span>,
-        <span class="talk">Planning with Partially Specified Behaviors</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Planning with Partially Specified Behaviors </a>.
+        <div class="talk-abstract">
+            In this paper we present a framework called PPSB for combining reinforcement learning and planning to solve sequential decision problems. Our aim is to show that reinforcement learning and planning complement each other well, in that each can take advantage of the strengths of the other. PPSB uses partial action specifications to decompose sequential decision problems into tasks that serve as an interface between reinforcement learning and planning. On the bottom level, we use reinforcement learning to compute policies for achieving each individual task. On the top level, we use planning to produce a sequence of tasks that achieves an overall goal. Experiments show that our framework is competitive with realistic environments where a robot has to perform some tasks.
+        </div>
+    </li>
 
     <li class="schedule-item"><span class="author">J. Ferrer Mestres </span>
         <span class="affiliation">(UPF)</span>,
-        <span class="talk">Combined Task and Motion Planning with Classical Planners Off the Shelf</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Combined Task and Motion Planning with Classical Planners Off the Shelf </a>.
+        <div class="talk-abstract">
+            The aim of this work is to provide an alternative integration of task and motion planning where the symbolic and geometrical components  are addressed in combination, with neither part taking the back seat. Unlike recent works that have the same motivation, our integration results in problems that can be solved with classical planners off the shelf.
+        </div>
+    </li>
 
     <li class="schedule-item"><span class="author">G. Francès </span>
         <span class="affiliation">(UPF)</span>,
-        <span class="talk">Planning in Functional STRIPS: Between Planning and Constraint Satisfaction</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Planning in Functional STRIPS: Between Planning and Constraint Satisfaction </a>.
+        <div class="talk-abstract">
+The derivation of heuristics from first-order planning
+languages such as Functional STRIPS raises a number of
+interesting issues at the intersection of planning and
+constraint satisfaction, that I'll address in the talk.
+        </div>
+    </li>
     </ul>
 
 
@@ -155,24 +214,44 @@
 
     <li class="schedule-item"><span class="author">J. Lobo </span>
         <span class="affiliation">(UPF)</span>,
-        <span class="talk">Using Answer Set Programming for the analysis of distributed algorithms</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">sing Answer Set Programming for the analysis of distributed algorithms </a>.
+        <div class="talk-abstract">
+            Distributed applications, including routing protocols, can be specified using a Declarative Networking Programming language that extends Datalog. I will describe how one can prove properties of distributed applications with the help of ASP solvers based on these specifications.
+        </div>
+    </li>
 
     <li class="schedule-item"><span class="author">V. Gómez </span>
         <span class="affiliation">(UPF)</span>,
-        <span class="talk">Action selection in growing state spaces: Control of Network Structure Growth</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">ction selection in growing state spaces: Control of Network Structure Growth </a>.
+        <div class="talk-abstract">
+The dynamical processes taking place on a network depend on its topology. Influencing the growth process of a network therefore has important implications on such dynamical processes. We formulate the problem of influencing the growth of a network as a stochastic optimal control problem in which a structural cost function penalizes undesired topologies. We approximate this control problem with a restricted class of control problems that can be solved using probabilistic inference methods. To deal with the increasing problem dimensionality, we introduce an adaptive importance sampling method for approximating the optimal control. We illustrate this methodology in the context of formation of information cascades, considering the task of influencing the structure of a growing conversation thread, as in Internet forums. Using a realistic model of growing trees, we show that our approach can yield conversation threads with better structural properties than the ones observed without control.
+        </div>
+    </li>
 
     <li class="schedule-item"><span class="author">I. Dotu </span>
         <span class="affiliation">(GRIB)</span>,
-        <span class="talk"> Combinatorial Optimization in Biology</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Combinatorial Optimization in Biology </a>.
+        <div class="talk-abstract">
+            I will describe a couple of applications of Combinatorial Optimization techniques such as Constraint Programming, Local Search and Large Neighborhood Search in RNA Biology.
+        </div>
+    </li>
 
     <li class="schedule-item"><span class="author">B. López </span>
         <span class="affiliation">(UdG)</span>,
-        <span class="talk">Constraint-programming Approach for Multiset and Sequence Mining</span></li>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Constraint-programming Approach for Multiset and Sequence Mining </a>.
+        <div class="talk-abstract">
+Constraint-based data mining is a field that recently has started to receive more attention. Describing a problem through a declarative model enables very descriptive and easy to extend implementations. Our work uses a previous itemset mining model in order to extend it with the capabilities to discover different and interesting patterns that have not been explored yet: multisets and sequences. The classic example domain is the retailer organizations, trying to mine the most common combinations of items bought together. Multisets would allow mining not only this itemsets but also the quantities of each item and sequences the order in with the items are retrieved. In this paper, we provide the background of the original work and we describe the modifications done to the model to extend it and support these new patterns. We also test the new models using real world data to prove their feasibility
+        </div>
+    </li>
 
     <li class="schedule-item"><span class="author">F. Torrent Fontbona </span>
         <span class="affiliation">(UdG)</span>,
-        <span class="talk">Assignació de generació d'energia utilitzant auto-organització i canons de justícia distributiva</span></li>
-    </ul>
+        <a tabindex="0" class="talk" role="button" data-toggle="popover" data-trigger="focus">Assignació de generació d'energia utilitzant auto-organització i canons de justícia distributiva </a>.
+        <div class="talk-abstract">
+            El problema de gestionar (micro)-xarxes elèctriques amb varis generadors distribuïts està esdevenint cada vegada més comú i complex. Aquest consisteix en un problema de resource allocation. Aquí presentem una nova manera d'abordar aquest problema utilitzant un sistema de justícia distribuïda en diferents canons per tal d'incloure varis conceptes de justícia. La rellevància de cada cànon és votada pels diferents agents de la xarxa i l'assignació de recursos  s'acaba calculant en base al que diuen els canons al temps que es satisfan les restriccions del problema.
+        </div>
+    </li>
+    </ul>   
 
 <div class="schedule-cat"><span class="time">17h30</span>Closing</div>
 
@@ -195,10 +274,12 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+            <script src="assets/js/custom.js"></script>
 
 	</body>
 </html>

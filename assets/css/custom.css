@@ -18,6 +18,10 @@ h2 {
     margin: 0 0.5em 0 0;
 }
 
+.talk-abstract {
+	display:none;
+}
+
 .schedule-cat {
     font-size: 1.1em;
     font-weight: 900;
